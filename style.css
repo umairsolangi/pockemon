@@ -1,0 +1,399 @@
+.nav4-img{
+    width: 150px;
+    height: 60px;
+}
+.navbar-2{
+    margin-top: 30px;
+}
+.nav-link{
+font-weight: bold;
+color: black !important;
+width: 150px;
+text-align: center;
+}
+.nav2-1{
+    background-color: grey;
+}
+.nav2-1:hover{
+    background-color: rgb(128, 128, 128);
+    text-align: center;
+}
+.nav2-2:hover{
+    background-color: orangered;
+    text-align: center;
+}
+.nav2-3:hover{
+    background-color: red;
+    text-align: center;
+}
+.nav2-4:hover{
+    background-color:yellow;
+    text-align: center;
+}
+.nav2-5:hover{
+    background-color: green;
+    text-align: center;
+}
+.nav2-6:hover{
+    background-color: rgb(0, 145, 255);
+    text-align: center;
+}
+.nav2-7:hover{
+    background-color: blue;
+    text-align: center;
+}
+.card1{
+    width: 1000px !important;
+}
+.card1-img{
+    width: 1000px !important;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card1-body{
+    background-color: rgb(255, 38, 0);
+    color: wheat;
+    font-weight: bold;
+}
+.card2-body{
+    background-color: rgb(0, 255, 85);
+    color: wheat;
+    font-weight: bold;
+}
+.card3-body{
+    background-color: rgb(0, 208, 255);
+    color: wheat;
+    font-weight: bold;
+}
+.card4-body{
+    background-color: rgb(255, 0, 119);
+    color: wheat;
+    font-weight: bold;
+}
+
+
+
+
+  
+  header {
+    text-align: center;
+  }
+  header img {
+    max-height: 100px;
+    cursor: pointer;
+  }
+  
+  strong {
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  
+  .type {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background-image: url("http://orig15.deviantart.net/24d8/f/2011/057/3/5/ge___energy_type_icons_by_aschefield101-d3agp02.png");
+    background-repeat: no-repeat;
+    background-size: 500% 400%;
+  }
+  .type.electric {
+    background-position: 100% 0;
+  }
+  .type.fire {
+    background-position: 25% 33%;
+  }
+  .type.water {
+    background-position: 63% 100%;
+  }
+  .type.grass {
+    background-position: 100% 33%;
+  }
+  .type.fighting {
+    background-position: 0 33%;
+  }
+  
+  .row {
+    display: block;
+    min-height: 50px;
+  }
+  
+  .instructions {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .instructions p {
+    font-size: 2em;
+  }
+  
+  .characters {
+    display: flex;
+    justify-content: space-around;
+    transition: visibility 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+  }
+  .characters.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+  
+  .char-container {
+    width: 25%;
+    text-align: center;
+    padding: 25px 0;
+    cursor: pointer;
+  }
+  .char-container img {
+    max-height: 100px;
+    margin-bottom: 13px;
+    transition: transform 0.3s ease, margin 0.3s ease;
+  }
+  .char-container h2 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: font-size 0.3s ease;
+  }
+  .char-container:hover img {
+    transform: scale(1.3);
+    margin-bottom: 17px;
+  }
+  .char-container:hover h2 {
+    font-size: 1.2em;
+  }
+  
+  .stadium {
+    background: #7DCD79;
+  }
+  .stadium > section {
+    display: block;
+    box-sizing: border-box;
+  }
+  .stadium > section .char {
+    height: 175px;
+    position: relative;
+  }
+  .stadium > section .char > * {
+    position: absolute;
+    text-transform: capitalize;
+  }
+  .stadium > section .char img {
+    height: 150px;
+  }
+  .stadium > section .char .data {
+    background: #CCC;
+    width: 20vw;
+    padding: 15px 2%;
+    box-sizing: border-box;
+    top: 25px;
+  }
+  .stadium > section .char .data progress {
+    width: 100%;
+  }
+  .stadium > section .char .data p {
+    text-align: right;
+  }
+  .stadium .enemy img {
+    right: 15vw;
+  }
+  .stadium .enemy .data {
+    left: 15vw;
+  }
+  .stadium .hero img {
+    left: 15vw;
+  }
+  .stadium .hero .data {
+    right: 15vw;
+  }
+  
+  .attack-list {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFAFA;
+    position: initial;
+   transform: opacity 0.3s ease;
+    text-transform: capitalize;
+  }
+  .attack-list.disabled {
+    opacity: 0.5;
+    position: relative;
+    z-index: -1;
+    cursor: initial;
+  }
+  .attack-list li {
+    width: 50%;
+    text-align: center;
+    padding: 25px 0;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .attack-list li:hover {
+    background: #EEE;
+  }
+  
+  .modal-out {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(33, 33, 33, 0.75);
+    z-index: 900;
+  }
+  .modal-out .modal-in {
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+    background: #FFFAFA;
+  }
+  .modal-out .modal-in header {
+    position: relative;
+    min-height: 30px;
+    text-align: center;
+    padding: 10px 3%;
+    box-sizing: border-box;
+  }
+  .modal-out .modal-in header h1 {
+    font-size: 2.2em;
+  }
+  .modal-out .modal-in .close {
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+  }
+  .modal-out .modal-in section {
+    box-sizing: border-box;
+    padding: 25px 3%;
+  }
+  .logo{
+      width: 200px;
+margin-left: 400px;  
+margin-top: 40px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #111518;
+    background: -webkit-linear-gradient(59deg, #38525f, #0f1d26);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:100px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+  /*SOCİAL İCONS*/
+  
+  /* footer social icons */
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  /* footer social icons */
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+  
